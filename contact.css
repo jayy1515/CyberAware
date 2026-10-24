@@ -1,0 +1,21 @@
+@import url("base.css");
+form label {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--muted);
+}
+input,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  font: inherit;
+}
+.sec p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}

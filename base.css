@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --bg: #0b1220;
+  --panel: #121c31;
+  --text: #e6edf7;
+  --muted: #9fb0c8;
+  --accent: #00e0a4;
+  --line: #22304d;
+}
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+.wrap {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.top {
+  background: #080e1a;
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+.bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
+}
+.logo span {
+  color: var(--accent);
+}
+nav a {
+  color: var(--muted);
+  margin-left: 18px;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+}
+nav a:hover,
+nav a.active {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+.sec {
+  padding: 50px 20px;
+}
+h2 {
+  margin-bottom: 18px;
+  font-size: 1.6rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 22px;
+}
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
+}
+.card h3 {
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.card p {
+  color: var(--muted);
+}
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #04281e;
+  border: 0;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.pagehead {
+  background: linear-gradient(120deg, #0f1c38, #0b1220);
+  padding: 60px 0 40px;
+  border-bottom: 1px solid var(--line);
+}
+.pagehead h1 {
+  font-size: 2.2rem;
+}
+.pagehead p {
+  color: var(--muted);
+}
+.two {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+ul,
+ol {
+  margin-left: 22px;
+}
+li {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+footer {
+  background: #080e1a;
+  border-top: 1px solid var(--line);
+  text-align: center;
+  padding: 22px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+@media (max-width: 640px) {
+  nav a {
+    margin: 0 12px 0 0;
+  }
+  .pagehead h1 {
+    font-size: 1.7rem;
+  }
+}

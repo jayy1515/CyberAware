@@ -1,0 +1,8 @@
+@import url("base.css");
+.card {
+  border-left: 4px solid var(--accent);
+}
+.card:hover {
+  background: #16243f;
+  transform: translateY(-10px);
+}

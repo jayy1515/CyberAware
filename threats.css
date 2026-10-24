@@ -1,0 +1,8 @@
+@import url("base.css");
+.card {
+  border-top: 4px solid #ff5d6c;
+}
+.card:hover {
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
